@@ -84,10 +84,9 @@ render(nbhub_url=JL_URL, \
     image_location=Path("zarr files/pyramid.zarr"), \
     microjson_overlay_location=Path("overlay files/x00_y01_c1_segmentations.json"))
 
-# Embeds an IFrame of a static build of Polus Render with an image and overlay file served online
+# Embeds an IFrame of a static build of Polus Render with an image served online
 render(nbhub_url=JL_URL, \
-    image_location=urlparse("https://files.scb-ncats.io/pyramids/segmentations/x00_y01_c1.ome.tif"), \
-    microjson_overlay_location=urlparse("https://files.scb-ncats.io/pyramids/segmentations/x00_y03_c1_segmentations.json"))
+    image_location=urlparse("https://viv-demo.storage.googleapis.com/LuCa-7color_3x3component_data.ome.tif"))
 ```
 
 # Functions
